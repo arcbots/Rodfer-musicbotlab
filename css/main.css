@@ -1,1 +1,120 @@
 /* Contenido del CSS incluido en la siguiente celda por brevedad */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: #000;
+}
+
+nav {
+  background-color: #0033A0; /* azul fuerte */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 1em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 0.5em;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav a.active {
+  border-bottom: 2px solid red;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+main.contenido {
+  padding: 1em;
+  text-align: center;
+}
+
+button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: #c00;
+}
+
+audio {
+  margin-top: 1em;
+}
+
+section.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1em;
+  padding: 1em;
+}
+
+section.galeria img {
+  width: 100%;
+  border: 3px solid #0033A0;
+  border-radius: 8px;
+}
+
+section.tabla-recursos table {
+  width: 90%;
+  margin: 1em auto;
+  border-collapse: collapse;
+  background-color: #f9f9f9;
+}
+
+section.tabla-recursos th, section.tabla-recursos td {
+  border: 1px solid #0033A0;
+  padding: 0.5em;
+  text-align: left;
+}
+
+section.video-container {
+  text-align: center;
+  padding: 2em;
+}
+
+.galeria-titulo {
+  text-align: center;
+  padding-top: 1em;
+  color: #0033A0;
+}
+
+/* Responsive menu */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    display: none;
+  }
+
+  nav ul.open {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
