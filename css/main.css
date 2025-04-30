@@ -1,8 +1,9 @@
 :root {
-  --azul: #0033a0;
   --rojo: #e10600;
+  --azul: #0033a0;
   --amarillo: #ffd100;
   --blanco: #ffffff;
+  --negro: #000000;
 }
 
 nav {
@@ -54,7 +55,7 @@ nav a:hover {
   nav ul {
     display: none;
     flex-direction: column;
-    background-color: #000;
+    background-color: var(--negro);
     width: 100%;
     padding: 10px 0;
   }
@@ -72,6 +73,7 @@ nav a:hover {
   }
 }
 
+/* Body y contenido */
 body {
   padding-top: 70px;
   margin: 0;
@@ -139,7 +141,7 @@ footer {
 .galeria img {
   width: 100%;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
 }
 
@@ -164,8 +166,8 @@ table {
   width: 100%;
   border-collapse: collapse;
   background-color: #111;
-  color: var(--blanco);
-  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  color: var(--amarillo);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
   border: 2px solid var(--azul);
   border-radius: 10px;
   overflow: hidden;
@@ -207,7 +209,7 @@ a:hover {
 .video-container iframe {
   max-width: 100%;
   border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
 .descripcion-proyecto {
@@ -245,7 +247,7 @@ a:hover {
   border-radius: 12px;
   padding: 20px;
   text-align: center;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .miembro img {
